@@ -1,0 +1,642 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:background="@android:color/black"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/backArrow"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="10dp"
+                android:padding="5dp"
+                android:src="@drawable/back_white" />
+
+            <com.tranxitpro.app.Utils.MyBoldTextView
+                android:id="@+id/lblTitle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="@string/history"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:id="@+id/parentLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/tripImg"
+                        android:layout_width="match_parent"
+                        android:layout_height="170dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/placeholder" />
+
+                    <LinearLayout
+                        android:id="@+id/profile_detail_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/tripProviderImg"
+                            android:layout_width="@dimen/_50sdp"
+                            android:layout_height="@dimen/_50sdp"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="8dp"
+                            app:civ_border_color="#FFFFFF"
+                            app:civ_border_width="4dp"
+                            app:civ_shadow="true"
+                            app:civ_shadow_color="#FFFFFF"
+                            app:civ_shadow_radius="10" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <com.tranxitpro.app.Utils.MyBoldTextView
+                                android:id="@+id/tripProviderName"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/sample_name"
+                                android:textColor="@color/black_text_color"
+                                android:textSize="16sp" />
+
+                            <RatingBar
+                                android:id="@+id/tripProviderRating"
+                                style="?attr/ratingBarStyleSmall"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:layout_marginBottom="5dp"
+                                android:layout_marginTop="5dp"
+                                android:isIndicator="true"
+                                android:numStars="5"
+                                android:progressTint="#FFCA28" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:layout_weight="0.8"
+                            android:orientation="vertical">
+
+                            <com.tranxitpro.app.Utils.MyBoldTextView
+                                android:id="@+id/tripDate"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="right"
+                                android:lineSpacingMultiplier="1.5"
+                                android:textColor="@color/black_text_color"
+                                android:textSize="@dimen/_11sdp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="#1a1a1a" />
+
+                    <LinearLayout
+                        android:id="@+id/sourceAndDestinationLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:padding="10dp"
+                                android:src="@drawable/round_shape" />
+
+                            <com.tranxitpro.app.Utils.MyBoldTextView
+                                android:id="@+id/tripSource"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:gravity="left"
+                                android:text="" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:padding="10dp"
+                                android:src="@drawable/round_shape" />
+
+                            <com.tranxitpro.app.Utils.MyBoldTextView
+                                android:id="@+id/tripDestination"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/ViewLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="#1a1a1a" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="5dp"
+                        android:orientation="vertical">
+
+                        <com.tranxitpro.app.Utils.MyBoldTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Booking ID"
+                            android:textColor="@color/black_text_color"
+                            android:textSize="16sp" />
+
+                        <com.tranxitpro.app.Utils.MyBoldTextView
+                            android:id="@+id/booking_id"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical|left"
+                            android:textColor="@color/black_text_color"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="#1a1a1a" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="5dp"
+                        android:orientation="vertical">
+
+                        <com.tranxitpro.app.Utils.MyBoldTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/payment_methods"
+                            android:textColor="@color/black_text_color"
+                            android:textSize="16sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/paymentTypeImg"
+                                android:layout_width="50dp"
+                                android:layout_height="30dp"
+                                android:layout_gravity="center_vertical"
+                                android:padding="5dp"
+                                android:src="@drawable/visa" />
+
+                            <com.tranxitpro.app.Utils.MyBoldTextView
+                                android:id="@+id/paymentType"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical|left"
+                                android:textColor="@color/black_text_color"
+                                android:textSize="16sp" />
+
+                            <com.tranxitpro.app.Utils.MyBoldTextView
+                                android:id="@+id/tripAmount"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical|right"
+                                android:textColor="@color/black_text_color"
+                                android:textSize="18sp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="#1a1a1a" />
+
+                    <LinearLayout
+                        android:id="@+id/lnrComments"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="5dp"
+                        android:orientation="vertical">
+
+                        <com.tranxitpro.app.Utils.MyBoldTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/comments"
+                            android:textColor="@color/black_text_color"
+                            android:textSize="16sp" />
+
+                        <com.tranxitpro.app.Utils.MyBoldTextView
+                            android:id="@+id/tripComments"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:textColor="@color/black_text_color"
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:id="@+id/lnrUpcomingLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:weightSum="2">
+
+            <com.tranxitpro.app.Utils.MyButton
+                android:id="@+id/btnCancelRide"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                android:background="@android:color/black"
+                android:text="@string/cancel_ride"
+                android:textAllCaps="true"
+                android:textColor="@color/cancel_ride_color" />
+
+            <com.tranxitpro.app.Utils.MyButton
+                android:id="@+id/btnCall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                android:background="@android:color/black"
+                android:text="@string/call_btn"
+                android:textAllCaps="true"
+                android:textColor="@color/cancel_ride_color" />
+
+
+        </LinearLayout>
+
+        <com.tranxitpro.app.Utils.MyButton
+            android:id="@+id/btnViewInvoice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@android:color/black"
+            android:text="@string/view_invoice"
+            android:textAllCaps="true"
+            android:textColor="@color/cancel_ride_color" />
+
+    </LinearLayout>
+
+    <!-- Invoice Layout ...-->
+    <LinearLayout
+        android:id="@+id/lnrInvoice"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transparent_black"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/lnrInvoiceSub"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/text_color_white"
+            android:gravity="bottom"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_marginRight="@dimen/_20sdp"
+                android:orientation="vertical">
+
+                <com.tranxitpro.app.Utils.MyBoldTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/_5sdp"
+                    android:paddingTop="@dimen/_5sdp"
+                    android:text="@string/invoice"
+                    android:textColor="@color/text_color_black"
+                    android:textSize="@dimen/_16sdp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:orientation="horizontal">
+
+                    <com.tranxitpro.app.Utils.MyBoldTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:text="@string/booking_id"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/_13sdp" />
+
+                    <com.tranxitpro.app.Utils.MyBoldTextView
+                        android:id="@+id/lblBookingID"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:text="@string/sample_base_price"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/_13sdp" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:orientation="horizontal">
+
+                    <com.tranxitpro.app.Utils.MyBoldTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:text="@string/base_price"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/_13sdp" />
+
+                    <com.tranxitpro.app.Utils.MyBoldTextView
+                        android:id="@+id/lblBasePrice"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:text="@string/sample_base_price"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/_13sdp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <com.tranxitpro.app.Utils.MyBoldTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:text="@string/extra_price"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/_13sdp" />
+
+                    <com.tranxitpro.app.Utils.MyBoldTextView
+                        android:id="@+id/lblExtraPrice"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:text="@string/sample_base_price"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/_13sdp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:orientation="horizontal">
+
+                    <com.tranxitpro.app.Utils.MyBoldTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:text="@string/distance_price"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/_13sdp" />
+
+                    <com.tranxitpro.app.Utils.MyBoldTextView
+                        android:id="@+id/lblDistancePrice"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:text="@string/sample_base_price"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/_13sdp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:orientation="horizontal">
+
+                    <com.tranxitpro.app.Utils.MyBoldTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:text="@string/tax"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/_13sdp" />
+
+                    <com.tranxitpro.app.Utils.MyBoldTextView
+                        android:id="@+id/lblTaxPrice"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:text="@string/sample_base_price"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/_13sdp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <com.tranxitpro.app.Utils.MyBoldTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:text="@string/commision"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/_13sdp" />
+
+                    <com.tranxitpro.app.Utils.MyBoldTextView
+                        android:id="@+id/lblCommision"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:text="@string/sample_base_price"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/_13sdp" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:orientation="vertical">
+
+                    <com.tranxitpro.app.Utils.MyBoldTextView
+                        android:id="@+id/myBoldTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:text="@string/total"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/_15sdp" />
+
+                    <com.tranxitpro.app.Utils.MyBoldTextView
+                        android:id="@+id/lblTotalPrice"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:text="@string/sample_base_price"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/_18sdp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/view_bg" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:id="@+id/imgPaymentTypeInvoice"
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        app:srcCompat="@drawable/money_icon" />
+
+                    <com.tranxitpro.app.Utils.MyBoldTextView
+                        android:id="@+id/lblPaymentTypeInvoice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:text="@string/selected_payment_mode"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/_13sdp" />
+
+                    <com.tranxitpro.app.Utils.MyBoldTextView
+                        android:id="@+id/lblPaymentChangeInvoice"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="right"
+                        android:text="@string/change"
+                        android:textSize="@dimen/_13sdp"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>
+
+
+

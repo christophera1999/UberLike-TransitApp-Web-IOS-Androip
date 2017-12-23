@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#000000</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#000000</color>
+
+    <!-- App customization -->
+    <color name="theme">#000000</color>
+
+    <!-- Button Customization -->
+    <color name="button_text_color">#ffffff</color>
+    <color name="transparent">#00000000</color>
+
+    <!-- Navigation drawer Customization-->
+    <color name="nav_header">#000000</color>
+    <color name="nav_body">#ffffff</color>
+    <color name="content_background">#ffffff</color>
+    <color name="view">#000000</color>
+    <color name="menu_color">#000000</color>
+    <color name="timer_text_color">#ffffff</color>
+    <color name="view_light">#808080</color>
+    <color name="black_text_color">#df000000</color>
+    <color name="light_black">#2F2F2F</color>
+    <color name="text_color_white">#ffffff</color>
+    <color name="cancel_ride_color">#B0B0B0</color>
+    <color name="rippel_color">#6DCFF6</color>
+    <color name="progress_bg">#efefef</color>
+    <color name="red">#f44236</color>
+    <color name="blue">#3e70c9</color>
+    <color name="green">#43b968</color>
+    <color name="orange">#f59345</color>
+    <color name="status_bg">#F1EEF7</color>
+    <color name="view_bg">#D8D7D8</color>
+
+</resources>

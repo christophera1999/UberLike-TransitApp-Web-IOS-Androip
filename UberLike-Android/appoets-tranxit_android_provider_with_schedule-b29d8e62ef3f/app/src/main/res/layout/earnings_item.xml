@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.tranxitpro.provider.Utilities.MyTextView
+            android:id="@+id/lblTime"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/black_text_color"/>
+
+        <com.tranxitpro.provider.Utilities.MyTextView
+            android:id="@+id/lblDistance"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textColor="@color/black_text_color"/>
+
+        <com.tranxitpro.provider.Utilities.MyTextView
+            android:id="@+id/lblAmount"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textColor="@color/black_text_color"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:background="@color/black_text_color"
+      />
+
+</LinearLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_edit_profile"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/reason_etxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/cancel_text"
+        android:layout_margin="@dimen/_5sdp"
+        android:gravity="start"
+        android:padding="@dimen/_5sdp"
+        android:hint="@string/reason_to_cancel"
+        android:lines="3"
+        android:textSize="@dimen/_11sdp" />
+
+    <Button
+        android:id="@+id/submit_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_5sdp"
+        android:background="@android:color/black"
+        android:text="@string/submit"
+        android:textColor="@android:color/white" />
+
+</LinearLayout>

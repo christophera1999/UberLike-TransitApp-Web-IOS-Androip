@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>com.splunk</groupId>
+  <artifactId>mint-android-instrumentation</artifactId>
+  <version>5.1.0</version>
+  <versioning>
+    <versions>
+      <version>5.1.0</version>
+    </versions>
+    <lastUpdated>20160722191038</lastUpdated>
+  </versioning>
+</metadata>

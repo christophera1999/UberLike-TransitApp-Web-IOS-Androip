@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/banner"
+        android:orientation="vertical">
+        <ImageView
+            android:src="@drawable/logo"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center_horizontal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2.2"
+        android:orientation="vertical">
+
+
+        <com.tranxitpro.provider.Utilities.MyBoldTextView
+            android:text="@string/get_moving_with_tranxit"
+            android:textSize="@dimen/_15sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"/>
+
+        <View
+            android:background="@color/cardview_shadow_start_color"
+            android:layout_width="match_parent"
+            android:layout_height="1dp">
+
+        </View>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:src="@drawable/mail_icon"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_margin="10dp"
+                />
+
+            <com.tranxitpro.provider.Utilities.MyTextView
+                android:id="@+id/enter_ur_mailID"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center|left"
+                android:layout_margin="10dp"
+                android:textColor="@color/cardview_shadow_start_color"
+                android:textSize="@dimen/_14sdp"
+                android:text="@string/enter_your_mail_id"/>
+        </LinearLayout>
+
+        <View
+            android:background="@color/cardview_shadow_start_color"
+            android:layout_width="match_parent"
+            android:layout_height="1dp">
+
+        </View>
+
+        <com.tranxitpro.provider.Utilities.MyTextView
+            android:text="@string/or_connect_with_social_media"
+            android:textColor="@android:color/holo_blue_light"
+            android:layout_width="match_parent"
+            android:id="@+id/connect_social"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_14sdp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

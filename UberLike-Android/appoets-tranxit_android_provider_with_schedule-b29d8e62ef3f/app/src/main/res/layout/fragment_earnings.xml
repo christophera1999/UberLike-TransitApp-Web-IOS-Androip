@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/lnrTitle"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="@android:color/black"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/backArrow"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:padding="@dimen/_7sdp"
+                android:src="@drawable/back_white" />
+
+            <com.tranxitpro.provider.Utilities.MyTextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:gravity="center_vertical"
+                android:text="@string/earnings"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/_14sdp" />
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/frmProgressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lnrTitle"
+            android:layout_centerHorizontal="true">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <com.tranxitpro.provider.Utilities.MyTextView
+                    android:id="@+id/lblTarget"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:text="0/0"
+                    android:textColor="@color/rippel_color"
+                    android:textSize="@dimen/_17sdp"
+                    android:textStyle="bold" />
+
+                <com.tranxitpro.provider.Utilities.MyTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:lineSpacingMultiplier="1.3"
+                    android:text="Target\nCompleted"
+                    android:textColor="@color/black_text_color"
+                    android:textSize="@dimen/_15sdp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <com.tranxitpro.provider.Utilities.CircularProgressBar
+                android:id="@+id/custom_progressBar"
+                android:layout_width="@dimen/_150sdp"
+                android:layout_height="@dimen/_150sdp"
+                android:layout_margin="@dimen/_10sdp"
+                android:visibility="visible"
+                app:max="10"
+                app:min="0"
+                app:progressBarThickness="@dimen/_8sdp" />
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/lnrEarnings"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/frmProgressBar"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/_10sdp"
+                android:paddingRight="@dimen/_10sdp">
+
+                <com.tranxitpro.provider.Utilities.MyTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:text="Total Earnings"
+                    android:textColor="@color/black_text_color"
+                    android:textSize="@dimen/_14sdp" />
+
+                <com.tranxitpro.provider.Utilities.MyTextView
+                    android:id="@+id/lblEarnings"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:textColor="@color/rippel_color"
+                    android:textSize="@dimen/_25sdp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.tranxitpro.provider.Utilities.MyButton
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:background="@color/black_text_color"
+                    android:layout_weight="1"
+                    android:text="Time"
+                    android:textColor="@color/button_text_color" />
+
+
+                <com.tranxitpro.provider.Utilities.MyButton
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_weight="1"
+                    android:background="@color/black_text_color"
+                    android:text="Distance"
+                    android:textColor="@color/button_text_color" />
+
+
+                <com.tranxitpro.provider.Utilities.MyButton
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_weight="1"
+                    android:background="@color/black_text_color"
+                    android:text="Amount"
+                    android:textColor="@color/button_text_color" />
+
+            </LinearLayout>
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rcvRides"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:scrollbars="vertical"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:id="@+id/errorLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/error_image"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_centerHorizontal="true"
+                    app:srcCompat="@drawable/calendar_clock" />
+
+                <com.tranxitpro.provider.Utilities.MyTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/error_image"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/no_rides"
+                    android:textColor="@color/black_text_color"
+                    android:textSize="@dimen/_12sdp" />
+
+
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

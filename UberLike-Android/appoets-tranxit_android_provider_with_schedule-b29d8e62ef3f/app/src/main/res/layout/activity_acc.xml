@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.tranxitpro.provider.Activity.AccActivity">
+
+    <ImageView
+        android:layout_width="@dimen/_18sdp"
+        android:layout_height="@dimen/_18sdp"
+        android:layout_margin="@dimen/_18sdp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/back_icon" />
+
+    <com.tranxitpro.provider.Utilities.MyBoldTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_18sdp"
+        android:text="@string/choose_acc"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/_15sdp" />
+
+    <View
+        android:id="@+id/line_devider"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@android:color/darker_gray" />
+
+
+</LinearLayout>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="CircularProgressView">
+        <attr name="cpv_progress" format="float" />
+        <attr name="cpv_maxProgress" format="float" />
+        <attr name="cpv_animDuration" format="integer" />
+        <attr name="cpv_animSwoopDuration" format="integer" />
+        <attr name="cpv_animSyncDuration" format="integer" />
+        <attr name="cpv_color" format="color" />
+        <attr name="cpv_thickness" format="dimension" />
+        <attr name="cpv_indeterminate" format="boolean" />
+        <attr name="cpv_animAutostart" format="boolean" />
+        <attr name="cpv_animSteps" format="integer" />
+    </declare-styleable>
+    <declare-styleable name="Dialog">
+        <attr name="DialogTitleAppearance" format="reference" />
+        <attr name="DialogTitleText" format="reference|string" />
+        <attr name="DialogSpotColor" format="reference|color" />
+        <attr name="DialogSpotCount" format="integer" />
+    </declare-styleable>
+    <declare-styleable name="CardContainer">
+        <attr name="android:gravity" />
+        <attr name="orientation" format="enum">
+            <enum name="ordered" value="0" />
+            <enum name="disordered" value="1" />
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="RippleBackground">
+        <attr name="rb_color" format="color" />
+        <attr name="rb_strokeWidth" format="dimension" />
+        <attr name="rb_radius" format="dimension" />
+        <attr name="rb_duration" format="integer" />
+        <attr name="rb_rippleAmount" format="integer" />
+        <attr name="rb_scale" format="float" />
+        <attr name="rb_type" format="enum">
+            <enum name="fillRipple" value="0" />
+            <enum name="strokeRipple" value="1" />
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="CircleProgressBar">
+        <attr name="min" format="integer" />
+        <attr name="max" format="integer" />
+        <attr name="progress" format="integer" />
+        <attr name="progressbarColor" format="color" />
+        <attr name="progressBarThickness" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="RangeSeekBar">
+        <attr name="absoluteMinValue" format="integer|float" />
+        <attr name="absoluteMaxValue" format="integer|float" />
+        <attr name="singleThumb" format="boolean" />
+    </declare-styleable>
+
+    <attr name="fromDegrees" format="float|reference" />
+    <attr name="toDegrees" format="float|reference" />
+    <attr name="childSize" format="dimension|reference" />
+
+    <declare-styleable name="ArcLayout">
+        <attr name="fromDegrees" />
+        <attr name="toDegrees" />
+        <attr name="childSize" />
+    </declare-styleable>
+    <declare-styleable name="ArcMenu">
+        <attr name="fromDegrees" />
+        <attr name="toDegrees" />
+        <attr name="childSize" />
+    </declare-styleable>
+
+    <declare-styleable name="RippleView">
+
+        <attr name="rv_alpha" format="integer" />
+
+        <attr name="rv_framerate" format="integer" />
+
+        <attr name="rv_rippleDuration" format="integer" />
+
+        <attr name="rv_zoomDuration" format="integer" />
+
+        <attr name="rv_color" format="color" />
+
+        <attr name="rv_centered" format="boolean" />
+
+        <attr name="rv_type" format="enum">
+
+            <enum name="simpleRipple" value="0" />
+
+            <enum name="doubleRipple" value="1" />
+
+            <enum name="rectangle" value="2" />
+
+        </attr>
+
+        <attr name="rv_ripplePadding" format="dimension" />
+
+        <attr name="rv_zoom" format="boolean" />
+
+        <attr name="rv_zoomScale" format="float" />
+
+    </declare-styleable>
+    <declare-styleable name="ExpandableTextView">
+        <attr name="trimLength" format="integer" />
+    </declare-styleable>
+
+    <style name="foodRatingBar" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@color/orange</item>
+        <item name="android:minHeight">23dip</item>
+        <item name="android:maxHeight">25dip</item>
+    </style>
+</resources>

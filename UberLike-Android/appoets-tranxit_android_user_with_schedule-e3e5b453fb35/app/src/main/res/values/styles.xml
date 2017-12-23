@@ -1,0 +1,65 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+
+    <style name="NavigationDrawerStyle">
+        <item name="android:textSize">@dimen/_14sdp</item>
+        <item name="android:listPreferredItemHeightSmall">@dimen/_40sdp</item>
+        <item name="android:fontFamily">fonts/ClanPro-NarrBook.otf</item>
+    </style>
+
+
+    <style name="MyDialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <!--buttons color-->
+        <item name="colorAccent">#421</item>
+        <!--title and message color-->
+        <item name="android:textColorPrimary">@android:color/holo_blue_light</item>
+        <!--dialog background-->
+        <item name="android:windowBackground">@android:color/white</item>
+    </style>
+
+    <!-- Base application theme. -->
+    <style name="Mytheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="android:textAppearance">@color/colorPrimaryDark</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="android:windowBackground">@color/text_color_white</item>
+        <item name="colorAccent">@color/text_color_white</item>
+        <item name="colorControlNormal">#c5c5c5 </item>
+        <item name="colorControlActivated">@color/colorPrimaryDark</item>
+        <item name="colorControlHighlight">@color/colorAccent</item>
+        <item name="android:textColorPrimary">@color/colorPrimaryDark</item>
+
+    </style>
+
+    <style name="AppLoginTheme" parent="Theme.AccountKit">
+        <item name="com_accountkit_primary_color">@color/colorPrimary</item>
+        <item name="com_accountkit_primary_text_color">@android:color/white</item>
+        <item name="com_accountkit_secondary_color">@color/view_grey_bg</item>
+        <item name="com_accountkit_secondary_text_color">#565a5c</item>
+        <item name="com_accountkit_status_bar_color">@android:color/white</item>
+        <item name="com_accountkit_button_background_color">@color/colorPrimary</item>
+        <item name="com_accountkit_button_text_color">@android:color/white</item>
+        <item name="com_accountkit_icon_color">@color/colorPrimary</item>
+        <item name="com_accountkit_toolbar_elevation">@dimen/_10sdp</item>
+    </style>
+
+</resources>

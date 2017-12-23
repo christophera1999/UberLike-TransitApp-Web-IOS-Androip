@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ClanPro_Book">fonts/ClanPro-Book.otf</string>
+    <string name="ClanPro_Medium">fonts/ClanPro-Medium.otf</string>
+    <string name="ClanPro_NarrBook">fonts/ClanPro-NarrBook.otf</string>
+    <string name="ClanPro_NarrMedium">fonts/ClanPro-NarrMedium.otf</string>
+    <string name="ClanPro_NarrNews">fonts/ClanPro-NarrNews.otf</string>
+    <string name="ClanPro_News">fonts/ClanPro-News.otf</string>
+    <string name="ClanPro_WideMedium">fonts/ClanPro-WideMedium.otf</string>
+    <string name="ClanPro_WideNews">fonts/ClanPro-WideNews.otf</string>
+    <string name="bariol">fonts/bariol_regular-webfont.ttf</string>
+</resources>

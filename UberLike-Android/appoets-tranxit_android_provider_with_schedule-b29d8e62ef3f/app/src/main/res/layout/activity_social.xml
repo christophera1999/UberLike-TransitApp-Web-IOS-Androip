@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/backArrow"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_margin="@dimen/_10sdp"
+        android:src="@drawable/back_icon" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.9"
+        android:orientation="vertical">
+
+        <com.tranxitpro.provider.Utilities.MyTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:padding="16dp"
+            android:text="@string/choose_acc"
+            android:textColor="@color/black_text_color"
+            android:textSize="@dimen/_17sdp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="5dp"
+            android:background="@color/cardview_shadow_start_color">
+
+        </View>
+
+        <LinearLayout
+            android:id="@+id/facebook_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_8sdp"
+            android:orientation="horizontal"
+            android:paddingLeft="16dp">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="@dimen/_5sdp"
+                android:src="@drawable/fb_icon" />
+
+            <com.tranxitpro.provider.Utilities.MyTextView
+                android:id="@+id/fb_txt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="8dp"
+                android:layout_weight="1"
+                android:gravity="center|left"
+                android:text="@string/facebook_name"
+                android:textColor="@color/black_text_color"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="@dimen/_20sdp"
+                android:src="@drawable/ic_right_arrow" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="5dp"
+            android:background="@color/cardview_shadow_start_color">
+
+        </View>
+
+        <LinearLayout
+            android:id="@+id/google_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_8sdp"
+            android:orientation="horizontal"
+            android:paddingLeft="16dp"
+            android:visibility="visible">
+
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="@dimen/_5sdp"
+                android:src="@drawable/google" />
+
+            <com.tranxitpro.provider.Utilities.MyTextView
+                android:id="@+id/enter_ur_mailID"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="8dp"
+                android:layout_weight="1"
+                android:gravity="center|left"
+                android:text="@string/google_name"
+                android:textColor="@color/black_text_color"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="@dimen/_20sdp"
+                android:src="@drawable/ic_right_arrow" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="5dp"
+            android:background="@color/cardview_shadow_start_color">
+
+        </View>
+
+    </LinearLayout>
+
+</LinearLayout>

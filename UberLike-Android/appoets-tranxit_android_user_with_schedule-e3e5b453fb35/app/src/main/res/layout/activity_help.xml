@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    tools:context="com.tranxitpro.app.Activities.ActivityHelp">
+
+    <com.tranxitpro.app.Utils.MyBoldTextView
+        android:id="@+id/title_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_centerHorizontal="true"
+        android:textSize="@dimen/_20sdp"
+        android:textStyle="bold"
+        android:textColor="@color/black_text_color"/>
+
+    <ImageView
+        android:id="@+id/img_executive"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_100sdp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/title_txt"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:src="@drawable/help_executive" />
+
+
+    <ImageView
+        android:id="@+id/img_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/img_mail"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:src="@drawable/help_call"
+        android:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/img_mail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginRight="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:src="@drawable/help_mail" />
+
+    <ImageView
+        android:id="@+id/img_web"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/img_mail"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:src="@drawable/help_web" />
+
+    <com.tranxitpro.app.Utils.MyBoldTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img_web"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:text="@string/help_msg"
+        android:textSize="@dimen/_18sdp"
+        android:textStyle="bold"
+        android:textColor="@color/black_text_color"/>
+
+</RelativeLayout>

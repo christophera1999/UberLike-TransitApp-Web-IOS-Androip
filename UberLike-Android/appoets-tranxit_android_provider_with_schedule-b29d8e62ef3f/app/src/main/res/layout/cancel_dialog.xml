@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_edit_profile"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+
+    <com.tranxitpro.provider.Utilities.MyTextView
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@android:color/black"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/_10sdp"
+        android:paddingStart="@dimen/_10sdp"
+        android:text="@string/reason_to_cancel"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/_13sdp" />
+
+
+    <com.tranxitpro.provider.Utilities.MyEditText
+        android:id="@+id/reason_etxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_5sdp"
+        android:gravity="start"
+        android:background="@drawable/cancel_text"
+        android:hint="@string/reason"
+        android:padding="@dimen/_4sdp"
+        android:textColor="@android:color/black"
+        android:lines="3"
+        android:textSize="@dimen/_11sdp" />
+
+    <com.tranxitpro.provider.Utilities.MyButton
+        android:id="@+id/submit_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_5sdp"
+        android:background="@android:color/black"
+        android:text="@string/submit"
+        android:textColor="@android:color/white" />
+
+</LinearLayout>

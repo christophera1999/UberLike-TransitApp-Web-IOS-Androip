@@ -1,0 +1,37 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- TODO: Update blank fragment layout -->
+    <pl.droidsonroids.gif.GifImageView
+        android:src="@drawable/driver"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center_horizontal|center_vertical"/>
+
+    <com.tranxitpro.provider.Utilities.MyTextView
+        android:gravity="center_horizontal|center_vertical"
+        android:textSize="@dimen/txt_WaitingForApproval"
+        android:textColor="@android:color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="@string/waitingForApproval" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/logoutBtn"
+            android:layout_margin="@dimen/button_margin"
+            android:padding="@dimen/button_padding"
+            android:text="@string/logout"
+            android:textColor="@color/button_text_color"
+            android:background="@drawable/button_corner_black"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_height" />
+    </LinearLayout>
+</LinearLayout>

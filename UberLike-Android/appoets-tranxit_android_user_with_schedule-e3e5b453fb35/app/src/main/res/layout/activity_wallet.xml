@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/wallet_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        card_view:cardCornerRadius="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="16dp"
+            android:paddingTop="16dp">
+
+            <ImageView
+                android:src="@drawable/wallet_icon"
+                android:layout_width="match_parent"
+                android:layout_height="84dp" />
+            <com.tranxitpro.app.Utils.MyBoldTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/wallet_balance"
+                android:textColor="@color/black_text_color"
+                android:layout_marginTop="10dp"
+                android:textSize="14sp" />
+
+            <com.tranxitpro.app.Utils.MyBoldTextView
+                android:id="@+id/balance_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:text="$0.0"
+                android:textColor="@color/black_text_color"
+                android:textSize="25sp" />
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/add_money_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        card_view:cardCornerRadius="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <com.tranxitpro.app.Utils.MyBoldTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="Add Money"
+                android:textColor="@color/black_text_color"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/currencySymbol"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/money_et"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="0"
+                    android:inputType="numberDecimal"
+                    android:textSize="22sp" />
+
+                <Button
+                    android:id="@+id/one"
+                    android:layout_width="50dp"
+                    android:layout_height="35dp"
+                    android:background="@drawable/border_stroke"
+                    android:visibility="visible" />
+
+                <Space
+                    android:layout_width="3dp"
+                    android:layout_height="wrap_content" />
+
+                <Button
+                    android:id="@+id/two"
+                    android:layout_width="50dp"
+                    android:layout_height="35dp"
+                    android:background="@drawable/border_stroke"
+                    android:visibility="visible" />
+
+                <Space
+                    android:layout_width="3dp"
+                    android:layout_height="wrap_content" />
+
+                <Button
+                    android:id="@+id/three"
+                    android:layout_width="50dp"
+                    android:layout_height="35dp"
+                    android:background="@drawable/border_stroke"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/add_fund_button"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/rounded_button"
+                android:text="Add Money"
+                android:textColor="@color/text_color_white"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
